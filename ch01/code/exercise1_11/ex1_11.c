@@ -16,10 +16,8 @@ int main(){
                 putchar('\n');
             }
         }
-        else if (state == OUT){
-            state = IN;
-        }
         else{
+            state = IN;
             putchar(c);
         }
     }
