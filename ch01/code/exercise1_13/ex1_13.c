@@ -9,7 +9,6 @@
 
 int main()
 {
-    /* init state is out, if state is in increament word's character count */
     int c, i, j, state, wordLen, maxWordLen, wordIndex;
     int wordLens[MAXWORDNUM];
 
