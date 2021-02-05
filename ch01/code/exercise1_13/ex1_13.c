@@ -32,7 +32,7 @@ int main()
         }
         else {
             if(state == OUT) 
-                state == IN;
+                state = IN;
             wordLen++;
         }
     }
