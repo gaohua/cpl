@@ -27,23 +27,8 @@ int main()
         "heo wor",
         ""
     };
-
-    int i ;
-    for (i = 0; i < sizeof(s1)/sizeof(s1[0]); i++)
-    {
-        char f1[sizeof(*s1[i])/sizeof(char)];
-        strcpy(f1,s1[i]);
-        squeeze(f1,s2[i]); 
-        if(s1[i] == expect[i])
-        {
-            printf("correct. %s",s1[i]);
-        }
-        else
-        {
-            printf("incorrect. %s",s1[i]);
-        }
-        
-    }
+    char f1[] = "this is a test";
+    squeeze(f1,s2[0]);
     return 0;
 }
 void squeeze(char s1[], char s2[])
