@@ -28,7 +28,7 @@ int binsearch(int x, int v[], int n)
         mid = (high - low) / 2 + low;
         if(x == v[mid])
             return mid;
-        else if(x <= v[mid])
+        else if(x < v[mid])
             high = mid - 1;
         else
             low = mid + 1;
@@ -49,7 +49,7 @@ int binsearch2(int x, int v[], int n)
 
         if(x == v[mid])
             return mid;
-        else if(x <= v[mid])
+        else if(x < v[mid])
             high = mid;
         else
             low = mid + 1;
