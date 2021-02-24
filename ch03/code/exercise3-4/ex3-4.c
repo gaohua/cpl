@@ -29,7 +29,8 @@ void itoa(int n, char s[])
 {
     int i, sign;
     unsigned int un;
-
+    
+    un = n;
     if((sign = n) < 0)
     {
         if(n == INT_MIN)
