@@ -49,6 +49,18 @@ int main()
             op2 = pop();
             push(fmod(pop(),op2));
             break;
+        case 't':
+            showTop();
+            break;
+        case 'd':
+            duplicate();
+            break;
+        case 'S':
+            swapTopTwoItem();
+            break;
+        case 'c':
+            clearStack();
+            break;
         case '\n':
             printf("\t%.8g\n", pop());
             break;
